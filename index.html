@@ -19,34 +19,41 @@
     
     <link rel="stylesheet" href="./css/styles.css">       
 </head>
+
 <body>
     <!-- Page header -->
 
    <header class="page-header">
-    <div class="container header-container">
-        <nav class="header-nav">
-            <a class="logo header-logo" 
-            href="./index.html">Web<span class="logo-part">Studio</span></a>
-            <ul class="nav-list">
-                <li class="nav-item">
-                    <a class="nav-link current" href="./index.html">Studio</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Portfolio</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="">Contacts</a></li>
-            </ul>
-        </nav>
-        <address class="contacts">
-            <ul class="contacts-list">
-                <li class="contacts-item">
-                    <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-                <li class="contacts-item">
-                    <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
-            </ul>
-        </address>
-    </div>  
-   </header>
-   
+        <div class="container header-container">
+            <nav class="header-nav">
+                <a class="logo header-logo" 
+                href="./index.html">Web<span class="logo-part">Studio</span></a>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a class="nav-link current" href="./index.html">Studio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Portfolio</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="">Contacts</a></li>
+                </ul>
+            </nav>
+            <address class="contacts">
+                <ul class="contacts-list">
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                    <li class="contacts-item">
+                        <a class="contacts-link" href="tel:+110001111111">+11 (000) 111-11-11</a></li>
+                </ul>
+            </address>
+
+            <button class="burger-btn" type="button" data-menu-open>
+                <svg class="burger-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-heroicons-solid_menu2x"></use>
+                </svg>
+            </button>
+        </div>
+    </header> 
+        
     <main>
 
       <!-- Page of effective solutions -->
@@ -70,8 +77,8 @@
                                 <use href="./images/icons.svg#icon-antenna-1"></use>
                             </svg>
                         </div>
-                        <h3 class="item-name title-solutions">Strategy</h3>
-                        <p class="hero-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. 
+                        <h3 class="title-solutions">Strategy</h3>
+                        <p class="posibility-text">Our goal is to identify the business problem to walk away with the perfect and creative solution. 
                         </p>
                     </li>
                     <li class="list-item">
@@ -80,8 +87,8 @@
                                  <use href="./images/icons.svg#icon-clock-1"></use>
                             </svg>
                         </div>
-                        <h3 class="item-name title-solutions">Punctuality</h3>
-                        <p class="hero-text">Bring the key message to the brand's audience for the best price within the shortest possible time.
+                        <h3 class="title-solutions">Punctuality</h3>
+                        <p class="posibility-text">Bring the key message to the brand's audience for the best price within the shortest possible time.
                         </p>
                     </li>
                     <li class="list-item">
@@ -90,8 +97,8 @@
                                 <use href="./images/icons.svg#icon-diagram-1"></use>
                             </svg>
                         </div>
-                        <h3 class="item-name title-solutions">Diligence</h3>
-                        <p class="hero-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
+                        <h3 class="title-solutions">Diligence</h3>
+                        <p class="posibility-text">Research and confirm brands that present the strongest digital growth opportunities and minimize risk.
                         </p>
                     </li>
                     <li class="list-item">
@@ -100,8 +107,8 @@
                                  <use href="./images/icons.svg#icon-astronaut-1"></use>
                             </svg>
                         </div>
-                        <h3 class="item-name title-solutions">Technologies</h3>
-                        <p class="hero-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
+                        <h3 class="title-solutions">Technologies</h3>
+                        <p class="posibility-text">Design practice focused on digital experiences. We bring forth a deep passion for problem-solving.
                         </p>
                     </li>
                 </ul>   
@@ -117,10 +124,11 @@
             <ul class="team-hero">
                 <li class="name-team">
                     <img 
+                    srcset="./images/Mark 2x.jpg 2x"
                     src="./images/Mark.jpg" alt="Product Designer" width="264">
                     <div class="item-text">
-                         <h3 class="item-name text-center">Mark Guerrero</h3>                       
-                          <p class="hero-text text-center">Product Designer</p> 
+                         <h3 class="item-name">Mark Guerrero</h3>                       
+                          <p class="hero-text">Product Designer</p> 
                           
                              <ul class="hero-items">
                                     <li class="profile-icons">
@@ -156,7 +164,8 @@
                     </div>
                 </li>
                 <li class="name-team">
-                    <img 
+                    <img
+                    srcset="./images/Tom 2x.jpg 2x" 
                     src="./images/Tom.jpg" alt="Frontend Developer" width="264">
                     <div class="item-text">
                         <h3 class="item-name text-center">Tom Ford</h3>
@@ -196,7 +205,8 @@
                     </div>
                 </li>
                 <li class="name-team">
-                    <img 
+                    <img
+                    srcset="./images/Camila 2x.jpg 2x"  
                     src="./images/Camila.jpg" alt="Marketing" width="264">
                     <div class="item-text">
                         <h3 class="item-name text-center">Camila Garcia</h3>
@@ -237,6 +247,7 @@
                 </li>
                 <li class="name-team">
                     <img 
+                    srcset="./images/Daniel 2x.jpg" 
                     src="./images/Daniel.jpg" alt="UI Designer" width="264">
                     <div class="item-text">
                         <h3 class="item-name text-center">Daniel Wilson</h3>
@@ -386,7 +397,7 @@
     </main>
 <!-- Footer -->
 
-       <footer class="page-footer">
+       <footer class="page-footer hidden">
             <div class="container footer-container">
                 <div class="footer-block">
                 <a class="logo footer-logo" 
@@ -448,7 +459,7 @@
         </footer>
 
 
-         <div class="backdrop is-open" data-modal> 
+         <div class="backdrop is-open hidden" data-modal> 
             <div class="modal">
                 <button class="modal-close-button" type="button" data-modal-close>
                      <svg class="button-close" width="8" height="8">
@@ -532,7 +543,34 @@
                 </form>
             </div>
         </div>
+
+    
+         <!-- data-menu -->
+     
+ 
+    <div class="mobile-menu is-open hidden">
+        <div class="container mobile-menu-container">
+            <button class="mobile-menu-close" type="button">
+                 <svg class="button-close-menu" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+             <nav class="mobile-menu-nav">
+                <ul class="mobole-page">
+                    <li class="mob-list">Studio</li>
+                    <li class="mob-list">Portfolio</li>
+                    <li class="mob-list">Contacts</li>
+                </ul>
+            </nav>
+                <address>Address</address>
+                <div>Soc linkS</div>
+        </div>
+    </div> 
+
+
+
         <script src=".js/modal.js"></script>
+        <!-- <script src=".js/menu.js"></script> -->
 </body>
 </html>
 
